@@ -6,9 +6,9 @@
 def func():
     a = 0
     array = []
-    array2 = []
-    for x in range(10, 10000):
-        array2.append(str(x))
+   
+    array2 = [str(x) for x in range(10, 10000)]
+    
     for y in array2:
         if len(y)<3:
             if y.count(y[0])==2:
